@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+body {
+    margin: 0;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color: #333333;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+/*----CSS for Layout-------*/
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.title {
+    text-align: center;
+    padding: 15px;
+}
+
+.row {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 1 250px;
+    padding: 15px;
+    margin: 10px;
+}
+
+

@@ -1,0 +1,204 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/">
+</head>
+<body>
+    
+    <header>
+        <a class="logo" href="#">Navaneeth<span class="gold">sankar</span></a>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#portfolio">PORTFOLLIO</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="row">
+            <div class="col">
+                <h3>Hello There!</h3>
+                <div class="sold">
+                    <span class="text first-text">I'm a</span><br>
+                    <span class="text sec-text">Designer</span>
+                </div>
+     <script>
+    const text = document.querySelector(".sec-text");
+
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent = "Designer";
+        }, 0);
+
+        setTimeout(() => {
+            text.textContent = "Animator";
+        }, 4000);
+
+        setTimeout(() => {
+            text.textContent = "Editor";
+        }, 8000);
+    }
+
+    textLoad();
+    setInterval(textLoad, 12000);
+</script>
+
+                <p>I’m a beginner Editor, Animator, and Designer passionate about creative storytelling. I enjoy learning new tools, experimenting with ideas, and bringing imagination to life through visuals and motion.</p><br> 
+                <a class="btn1" href="#">About me</a>
+                <a class="btn1" href="#">Contact me</a>
+            </div>
+            <div class="col"></div>
+        </div>
+    </section>
+    
+   <section class="about" id="about">
+  <div class="title">
+      <h2>ABOUT <span class="gold">ME</span></h2>
+      <p>🎨 Editor • Animator • Designer</p>
+  </div>
+
+  <div class="row about-row">
+      <div class="col pic1">
+          <img src="images/ChatGPT Image Oct 31, 2025, 10_39_26 AM.png" alt="Profile Picture">
+      </div>
+
+      <div class="col about-text">
+        <p>
+          I’m a growing creative enthusiast exploring the world of editing, animation, and design. 
+          What started as curiosity has become a genuine passion for crafting visuals that tell stories 
+          and spark emotion.
+        </p>
+
+        <p>
+          I love experimenting, learning new tools, and bringing ideas to life — whether it's editing 
+          footage, animating characters, or designing clean visual layouts. Every project helps me 
+          refine my style, understand storytelling better, and improve my creative foundation.
+        </p>
+
+        <p>
+          I'm still early in my journey, but I believe creativity grows through practice, patience, and 
+          bold experimentation. Step by step, I’m building the skills to create meaningful, inspiring, and 
+          visually impactful work.
+        </p>
+
+        <a class="btn1" href="">More about me</a>
+      </div>
+  </div>
+</section>
+
+    <section class="skills" id="skills">
+        <div class="title">
+            <h2>MY <spam class="gold">SKILLS</spam></h2>
+            <p>The given following are my skills levels.</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>PROGRAMMING SKILLS</h3>
+
+                <h4>HTML 70%</h4>
+                <div class="html"></div>
+
+                <h4>CSS 60%</h4>
+                <div class="css"></div>
+
+                <h4>Design 80%</h4>
+                <div class="design"></div>
+            </div>
+            <div class="col">
+                <h3>LANGUAGE SKILLS</h3>
+
+                <h4>ENGLISH 80%</h4>
+                <div class="english"></div>
+
+                <h4>HINDI 90%</h4>
+                <div class="hindi"></div>
+
+                <h4>MALAYALAM 50%</h4>
+                <div class="malayalam"></div>
+            </div>
+        </div>
+        <script>
+const skillBars = document.querySelectorAll(".skills .row div div");
+const skillsSection = document.querySelector(".skills");
+
+function animateSkills() {
+    const sectionPos = skillsSection.getBoundingClientRect().top;
+    const screenPos = window.innerHeight / 1.3;
+
+    if (sectionPos < screenPos) {
+        skillBars.forEach(bar => {
+            bar.classList.add("animate");
+        });
+    }
+}
+
+window.addEventListener("scroll", animateSkills);
+</script>
+
+    </section>
+<section class="portfolio" id="portfolio">
+  <div class="title">
+      <h2>MY <span class="gold">PORTFOLIO</span></h2>
+      <p>Some of my latest creative and design works.</p>
+  </div>
+
+  <div class="portfolio-container">
+      <div class="portfolio-item">
+        <img src="images/nIL6DPd7mEK.png" alt="">
+      </div>
+
+      <div class="portfolio-item">
+        <img src="images/magazine cover.jpg" alt="">
+      </div>
+
+      <div class="portfolio-item">
+        <img src="images/Transcity poster.jpg" alt="">
+      </div>
+
+       <div class="portfolio-item">
+        <img src="images/fposter,small,wall_texture,square_product,600x600.u5.jpg" alt="">
+      </div>
+
+  </div>
+</section>
+
+
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2>GET <spam class="gold">IN TOUCH</spam></h2>
+            <p>Have a project in mind or want to collaborate? I’d love to hear from you. Feel free to connect anytime</p>
+            <div class="row">
+                <div class="col">
+                    <h3><span class="gold">My Contact Details</span></h3>
+                    <p> <b><span class="gold">Address</span></b></p>
+                    <p>Silver Stone,Manarakara Road<br>Ernakulam, Kerala</p>
+                    <p><span class="gold">Email:</span> navaneeth@gmail.net</p>
+                    <p><span class="gold">Phone:</span> +88 (0) 101 0000 000</p>
+
+                </div>
+                <div class="col">
+                 <form method="POST">
+                 <input type="text" name="name" placeholder="Your name" required>
+                 <input type="email" name="email" placeholder="Your email" required>
+                  <textarea name="message" placeholder="Your message" required></textarea>
+                 <input class="btn2" type="submit" value="Send Message">
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © ALL Right Reserved. Developed By <span class="gold">Navaneeth sankar</span> . ©  <img src="images/up-arrow.png" alt="">  
+    </footer>
+</body>
+</html>
